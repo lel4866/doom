@@ -84,3 +84,4 @@
 (menu-bar-mode 1)
 ;;(after! vterm
 ;;  (set-popup-rule! "*doom:vterm-popup:main*" :size 0.5 :vslot -4 :select t :quit nil :ttl 0 :side 'right))
+(add-hook! 'window-setup-hook #'(lambda () (neotree-show)))
