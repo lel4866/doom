@@ -78,10 +78,11 @@
 
 ;; changes by Larry Lewis
 (setq confirm-kill-emacs nil)
-(setq doom-font (font-spec :family "Hack Nerd Font Mono" :size 16))
+(setq doom-font (font-spec :family "Hack Nerd Font Mono" :size 14))
 ;;(setq fancy-splash-image "~/.config/doom/doomEmacsTokyoNight.svg")
 (setq fancy-splash-image nil)
 (menu-bar-mode 1)
 ;;(after! vterm
 ;;  (set-popup-rule! "*doom:vterm-popup:main*" :size 0.5 :vslot -4 :select t :quit nil :ttl 0 :side 'right))
 (add-hook! 'window-setup-hook #'(lambda () (neotree-show)))
+(setq neo-window-fixed-size nil)
